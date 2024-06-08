@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AstroMeet 🚀
 
-## Getting Started
+AstroMeet is a video conferencing platform built with a modern tech stack including Next.js, TypeScript, TailwindCSS, Clerk for authentication, GetStream.io for real-time video magic, and shadcn/ui for components 🪄
 
-First, run the development server:
+## Live Demo 🎉
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Try it out live: [AstroMeet](https://astromeet.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features ✨
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🔐 **Authentication**: Secure login with Clerk, including social sign-ons and traditional methods.
+- 🎥 **New Meeting**: Easily start a new meeting, configuring camera and microphone settings before joining.
+- 🎛️ **Meeting Controls**: Full control over meeting aspects, including recording, emoji reactions, screen sharing, sound adjustments, grid layout, participant list view, and individual participant management.
+- 🚪 **Exit Meeting**: Leave a meeting or end it for all participants.
+- 📅 **Schedule Future Meetings**: Schedule meetings in advance and access them on the 'Upcoming Meetings' page.
+- 📜 **Past Meetings List**: View details and metadata of previous meetings.
+- 📼 **View Recorded Meetings**: Access recordings of past meetings.
+- 🔗 **Personal Room**: Instant meetings with a unique link, shareable with others.
+- 🌐 **Join Meetings via Link**: Join meetings created by others using a shared link.
+- 📱 **Responsive Design**: Optimized for all devices, ensuring a seamless experience across different screen sizes and resolutions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used 🛠️
 
-## Learn More
+- **Next.js**: Framework for server-rendered React applications.
+- **TypeScript**: Static typing for JavaScript.
+- **TailwindCSS**: Utility-first CSS framework.
+- **Clerk**: Secure and scalable user authentication API.
+- **GetStream.io**: Real-time video infrastructure.
+- **shadcn/ui**: Beautifully designed and customizable components.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation 🛠️
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To set up AstroMeet locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/yashxcode/astro-meet.git
+   cd astro-meet
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install the dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+
+   Create a new file named `.env` in the root of your project and add the following content:
+
+   ```env
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+   NEXT_PUBLIC_STREAM_API_KEY=
+   STREAM_SECRET_KEY=
+   ```
+
+   Replace the placeholder values with your actual Clerk and GetStream.io credentials.
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+
+---
+
+AstroMeet is designed to provide a robust and user-friendly video conferencing experience 🔮
+For any issues, feel free to open an issue on this repository.
