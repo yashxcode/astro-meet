@@ -72,5 +72,5 @@ To set up AstroMeet locally, follow these steps:
 
 ---
 
-AstroMeet is designed to provide a robust and user-friendly video conferencing experience 🔮
+AstroMeet is designed to provide a robust and user-friendly video conferencing experience.
 For any issues, feel free to open an issue on this repository.
