@@ -2,13 +2,14 @@
 
 "use client"
 
-import { useGetCalls } from "@/hooks/useGetCalls"
-import { Call, CallRecording } from "@stream-io/video-react-sdk"
-import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
+import { useGetCalls } from "@/hooks/useGetCalls"
+import { useToast } from "./ui/use-toast"
+
+import { Call, CallRecording } from "@stream-io/video-react-sdk"
 import MeetingCard from "./MeetingCard"
 import Loader from "./Loader"
-import { useToast } from "./ui/use-toast"
 
 const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const { endedCalls, upcomingCalls, callRecordings, isLoading } = useGetCalls()

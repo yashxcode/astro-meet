@@ -2,14 +2,15 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { useUser } from "@clerk/nextjs"
+import { useToast } from "./ui/use-toast"
+import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk"
+
 import HomeCard from "./HomeCard"
 import MeetingModal from "./MeetingModal"
-import { useUser } from "@clerk/nextjs"
-import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk"
-import { useToast } from "./ui/use-toast"
 import { Textarea } from "./ui/textarea"
-import ReactDatePicker from "react-datepicker"
 import { Input } from "./ui/input"
+import ReactDatePicker from "react-datepicker"
 
 const MeetingTypeSection = () => {
   const router = useRouter()

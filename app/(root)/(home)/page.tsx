@@ -1,5 +1,4 @@
 import MeetingTypeSection from "@/components/MeetingTypeSection"
-import Image from "next/image"
 
 const Home = () => {
   const now = new Date()

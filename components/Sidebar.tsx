@@ -1,9 +1,9 @@
 "use client"
 
-import { sidebarLinks } from "@/constants"
-import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
+import { sidebarLinks } from "@/constants"
 import { usePathname } from "next/navigation"
 
 const Sidebar = () => {
