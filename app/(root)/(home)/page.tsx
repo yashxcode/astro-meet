@@ -6,9 +6,11 @@ const Home = () => {
   const time = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "America/New_York",
   })
   const date = new Intl.DateTimeFormat("en-US", {
     dateStyle: "full",
+    timeZone: "America/New_York",
   }).format(now)
   return (
     <section className="flex size-full flex-col gap-10 text-foreground">
@@ -18,7 +20,7 @@ const Home = () => {
             Upcoming Meeting at: 4:30 PM
           </h2>
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-extrabold lg:text-5xl">{time}</h1>
+            <h1 className="text-4xl font-extrabold lg:text-5xl">{time} EST</h1>
             <p className="text-lg font-medium text-[#C9DDFF] lg:text-2xl">
               {date}
             </p>
