@@ -53,7 +53,7 @@ const LandingPage = () => {
           Video calls loved by extraordinary teams.
         </h1>
         <p className="max-w-3xl text-center text-lg text-[#7F7F7F] my-6 leading-relaxed">
-          Meetings don't have to crush your soul. Discover radically unique
+          Meetings don&apos;t have to crush your soul. Discover radically unique
           video calls designed to help hybrid-remote teams create, collaborate
           and celebrate.
         </p>
