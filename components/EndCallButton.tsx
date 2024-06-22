@@ -22,7 +22,7 @@ const EndCallButton = () => {
     <Button
       onClick={async () => {
         await call.endCall()
-        router.push("/")
+        router.push("/dashboard")
       }}
       className="bg-[#DC433B] text-foreground hover:bg-[#f66159]"
     >
