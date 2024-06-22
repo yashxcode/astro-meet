@@ -1,6 +1,8 @@
+"use client"
+
 import MeetingTypeSection from "@/components/MeetingTypeSection"
 
-const Home = () => {
+const Dashboard = () => {
   const now = new Date()
   const time = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
@@ -31,4 +33,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Dashboard
